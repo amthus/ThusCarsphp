@@ -1,0 +1,461 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Merriweather:wght@300;400;700&display=swap');
+
+/* Styles généraux */
+
+body{
+  background: url(img/bg-76.svg);
+  margin: 0;
+  padding: 0;
+}
+.redressed{
+    font-family: 'Redressed', cursive;
+}
+.merriweather{
+    font-family: 'merriweather',serif;
+}
+/* Styles de la navbar */
+.bf-navbar{
+    background-color: rgba(245,243,251);
+    font-family: 'Merriweather',serif;
+    box-shadow: 1px 1px 3px rgba(255, 255, 255,0.54);
+    z-index: 10;
+}
+.bf-navbar .nav-link{
+    border-bottom: 4px solid transparent;
+    transition: padding 0.9s ease-in-out, 2s ease;
+    color: #000;
+}
+.bf-navbar .nav-link:hover{
+    padding-bottom: 20px;
+    border-bottom-color:var(--bs-teal) ;
+}
+.btn-over{
+    color: #000;
+    border-color:none;
+    transition: 0.5s;
+}
+.btn-over:hover,
+.btn-over:active{
+    color: #000;
+    background-color: rgba(0, 83, 202);
+}
+#cours{
+  color: #000;
+  font-size: 30px;
+}
+/* Styles pour l'image et la citaion */
+.image img{
+    width: 70%;
+    margin-left: 30%;
+    height: 100%;
+}
+.image {
+    float: right;
+    margin-top: 10%;
+    width: 70%;
+}
+.citation{
+    float: left;
+    margin-top: -35%;
+    margin-left: 10%;
+}
+/* Styles pour les différents domaines */
+.contenu
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 4rem auto;
+    width: 90%;
+}
+.contenu h2
+{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.box
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 9% ;
+}
+.store-items
+{
+    width: 300px;
+    padding: 5%;
+    border-radius: 15px;
+    margin: 20px 20px;
+    text-align: center;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8); 
+}
+.store-items a
+{
+   text-decoration: none;
+   font-size: 30px;
+   color: #000;
+   text-transform: uppercase;
+}
+/* Styles pour la section à propos */
+.imb{
+    float: left;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 35%;
+}
+.imb img{
+  
+  width: 100%;
+ 
+}
+.propos{
+    float: right;
+    margin-right: 10%;
+    margin-top: 15%;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 25px;
+    height: 50%;
+    background-color: #6d44b8;
+}
+.apropos{
+  margin-top: 50px;
+  width: 100%;
+  height: 850px;
+  background-size: cover;
+}
+.propos h2
+{
+    text-align: center;
+    font-size: 4.5rem;
+}
+/* Styles pour la section temoignages*/
+.temoignages{
+    background-size: cover;
+    margin-top: 30%;
+    
+    
+ }
+ .temoignages .contenue{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 70px;
+  width: 100%;
+  align-items: center;
+  height: -950px;
+}
+ .titre-text{
+  color: black;
+  font-size: 2rem;
+  font-weight: 300px;
+  text-transform: capitalize;
+  margin-left: 45%;
+}
+ .temoignages .contenue .box{
+    width: 340px;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 40px;
+    border: 1px solid ;
+ }
+ .temoignages .contenue .box .imbox{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    overflow: hidden;
+ }
+ .temoignages .contenue .box .imbox img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+
+ }
+ .temoignages .contenue .box .text h3{
+    font-weight: 600;
+    text-align: center;
+    color: #111;
+    margin-top: 30px;
+    font-size: 1em;
+  }
+  .temoignages .contenue .box .text{
+    font-style: italic;
+    text-align: center;
+    color: #666;
+  }
+  .blanc {
+    
+    margin-top: -27%;
+    margin-left: -5%;
+  }
+  .blanc .titre-text{
+    color: black;
+  }
+
+ /* Styles pour le footer*/
+ footer{
+    background-color: aqua;
+    width: 48%;
+    margin-bottom: 8%;
+    margin-left: 26%;
+    padding: 3% 3%;
+    border-radius: 60px;
+ }
+ .email{
+    float: right;
+ }
+ .commentaire a{
+  color: #000;
+  text-decoration: none;
+}
+.commentaire {
+ margin-top: -90px;
+ margin-bottom: 5%;
+ width: 30%;
+ margin-left: 35%;
+ border: none;
+}
+ /*
+ Styles des page des différents domaines
+ */
+ .pro{
+    float: left;
+    margin-top: 10%;
+    display: block;  
+    background-color: rgba(0,0,0,0.55);
+    width: 15%;
+    height: 100vh;
+ }
+ .pro a{
+   text-decoration: none;
+   font-size: 25px;
+ }
+ .lien1{
+    margin-top: 30px;
+    display: block;
+ }
+ .lien3{
+    margin-top: 30px;
+    padding: 5px 35px;
+ }
+/*
+Styles du sing up
+*/
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #3e98b9;
+  max-height: 600px;
+  width: 30%;
+  margin-top: 4%;
+  margin-left: 36%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 7px 7px 10px 3px #24004628;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+}
+
+/*checkbox to switch from sign up to login*/
+#chk {
+  display: none;
+}
+
+/*Login*/
+.login {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.login label {
+  margin: 25% 0 5%;
+}
+
+label {
+  color: #fff;
+  font-size: 2rem;
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  background: #e0dede;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+/*Register*/
+.register {
+  background: #eee;
+  border-radius: 60% / 10%;
+  transform: translateY(70px);
+  transition: .8s ease-in-out;
+}
+
+.register label {
+  color: #573b8a;
+  transform: scale(.6);
+}
+
+#chk:checked ~ .register {
+  transform: translateY(-58%);
+}
+
+#chk:checked ~ .register label {
+  transform: scale(1);
+  margin: 10% 0 5%;
+}
+
+#chk:checked ~ .login label {
+  transform: scale(.6);
+  margin: 5% 0 5%;
+}   
+
+   /*Button*/
+.form .button {
+    width: 85%;
+    height: 40px;
+    margin: 12px auto 10%;
+    color: #fff;
+    background: #573b8a;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s ease-in;
+  }
+  
+  .form .button:hover {
+    background-color: #6d44b8;
+  }
+  .form a {
+    color: #fff;
+    margin-top: -10px;
+    text-decoration: none;
+  }
+  .erreur{
+    margin-top: 20%;
+    float: right;
+    
+    color: #240046;
+    font-size: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+  .reveal{
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 2s ease;
+  }
+  .reveal.active{
+    opacity: 1;
+    transform: translateY(0px);    
+  }
+  .vitesse{
+    opacity: 0;
+    transform: translateY(-150px);
+    transition: all 2s ease;
+  }
+  .vitesse.active{
+    opacity: 1;
+    transform: translateY(0px);    
+  }
+   label.jkd {
+    color: #fff;
+    font-size: 1.5rem;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+  }
+.mail{
+    text-decoration: none;
+    border-color: #6d44b8;
+    padding: 10px 0px;
+    color: #240046;
+    border-radius: 10px;
+
+  }
+@media screen and (max-width: 768px){
+.image {
+    float: right;
+    margin-top: 35%;
+    width: 70%;
+}
+
+.contenu
+{
+    display: inline-block;
+    
+    margin-left: -5px;
+    width: 100%;
+}
+.store-items
+{
+    width: 150px;
+    padding: 5%;
+    border-radius: 15px;
+    margin: 20px 20px;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8); 
+    margin-left: 12%;
+}
+.store-items p
+{
+    font-size: 15px;
+    text-align: center;
+}
+body{
+   background-color: yellow;
+}
+
+.titre-text{
+  color: black;
+  font-size: 2rem;
+  font-weight: 300px;
+  text-transform: capitalize;
+  margin-left: 45%;
+}
+
+.temoignages .contenue{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5%;
+  width: 100%;
+  align-items: center;
+  height: -950px;
+}
+
+}
